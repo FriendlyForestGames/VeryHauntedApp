@@ -4,6 +4,14 @@
 
 Local development
 
+Build the necessary images
+
+```shell
+make dev-build
+```
+
+Spin up the containers
+
 ```shell
 make dev-up
 ```

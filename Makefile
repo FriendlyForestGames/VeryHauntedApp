@@ -1,7 +1,15 @@
+-include .env
 SHELL := /bin/bash
-PROJECT_NAME?=very-haunted-server-side
+PROJECT_NAME?=very-haunted
 
 USER_ID:=$(shell id -u $$USER)
+
+NODE_IMG=very-haunted:node
+
+# Use the docker buildkit enhancements, see https://docs.docker.com/develop/develop-images/build_enhancements/
+export DOCKER_BUILDKIT=1
+
+EXPOSE_PORT?=3000
 
 # Git repos
 REPO=git@github.com:actuallyconnor/very-haunted-server-side.git
@@ -13,6 +21,14 @@ DOCKER_COMPOSE:=VH_EXPOSE_PORT=$(VH_EXPOSE_PORT) \
   -p $(PROJECT_NAME) \
   -f docker-compose.yml
 #   -f docker-compose.dev.yml
+
+# Builds all Docker images
+.PHONY: docker-images
+docker-images:
+	docker build --pull -t $(NODE_IMG) -f docker/node/Dockerfile .
+
+.PHONY: dev-build
+dev-build: docker-images
 
 # Bring up the development environment
 .PHONY: dev-up
