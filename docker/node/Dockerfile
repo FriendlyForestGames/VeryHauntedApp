@@ -12,4 +12,4 @@ COPY ./app /srv
 RUN chmod 777 /srv
 
 # Install npm dependencies
-RUN npm i -g @nestjs/cli
+RUN npm i -g express

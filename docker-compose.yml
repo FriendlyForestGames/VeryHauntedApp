@@ -3,7 +3,7 @@ services:
   node:
     container_name: nestjs
     image: very-haunted:node
-    entrypoint: npm run start:dev
+    entrypoint: node app.js
     depends_on:
       - postgres
     expose:

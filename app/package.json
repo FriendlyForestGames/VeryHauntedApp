@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Connor Smyth",
-  "license": "proprietary"
+  "license": "proprietary",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
 }
