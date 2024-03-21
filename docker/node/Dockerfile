@@ -7,7 +7,7 @@ RUN apk update && apk upgrade
 WORKDIR /srv
 
 # Copy stuff - refine this later on
-COPY ./src /srv
+COPY ./app /srv
 
 RUN chmod 777 /srv
 
