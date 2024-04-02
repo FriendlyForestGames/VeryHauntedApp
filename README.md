@@ -4,6 +4,12 @@
 
 Local development
 
+Install npm packages
+
+```shell
+make dev-install
+```
+
 Build the necessary images
 
 ```shell

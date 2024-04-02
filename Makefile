@@ -44,3 +44,7 @@ dev-down:
 .PHONY: dev-clean
 dev-clean: dev-down
 	@$(DOCKER_COMPOSE) rm -s -v --force
+
+.PHONY: dev-install
+dev-install:
+	cd app && npm i
