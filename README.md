@@ -2,9 +2,9 @@
 
 ## Getting Started
 
-Local development
+### Local development
 
-### Install npm packages
+Install npm packages
 
 ```shell
 make dev-install
