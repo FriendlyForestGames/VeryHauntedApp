@@ -4,7 +4,7 @@
 
 Local development
 
-Install npm packages
+### Install npm packages
 
 ```shell
 make dev-install
@@ -21,6 +21,8 @@ Spin up the containers
 ```shell
 make dev-up
 ```
+
+Go to [http://localhost:3000](http://localhost:3000) in your browser
 
 Technologies:
 
