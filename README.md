@@ -4,25 +4,25 @@
 
 ### Local development
 
-Install npm packages
+1. Install npm packages
 
 ```shell
 make dev-install
 ```
 
-Build the necessary images
+2. Build the necessary images
 
 ```shell
 make dev-build
 ```
 
-Spin up the containers
+3. Spin up the containers
 
 ```shell
 make dev-up
 ```
 
-Go to [http://localhost:3000](http://localhost:3000) in your browser
+4. Go to [http://localhost:3000](http://localhost:3000) in your browser
 
 Technologies:
 
