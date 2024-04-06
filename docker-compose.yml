@@ -4,8 +4,6 @@ services:
     container_name: node
     image: very-haunted:node
     entrypoint: npm start
-    depends_on:
-      - postgres
     expose:
       - 3000
     ports:
