@@ -1,3 +1,4 @@
+//imports put into consts to facilitate methods and code
 const express = require("express");
 const router = express.Router();
 
@@ -5,6 +6,9 @@ const router = express.Router();
 router.get("/accounts/:accountUuid", (req, res) => {
   //using req to pull parameters from Uuid
   const accountUuid = req.params.accountUuid;
-  //using template literal to send message with Uuid interpolated
+  //using template literals to send message with Uuid interpolated
   res.send(`Retrieving account with UUID: ${accountUuid}`);
 });
+
+//export the router!
+module.exports = router;
