@@ -1,4 +1,3 @@
-//imports put into consts to facilitate methods and code
 const express = require("express");
 const router = express.Router();
 
