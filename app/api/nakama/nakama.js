@@ -23,5 +23,7 @@ class Nakama {
   }
 }
 
+// Freezing an object prevents extensions and makes existing properties
+// non-writable and non-configurable
 const nakama = Object.freeze(new Nakama());
 module.exports = nakama;
