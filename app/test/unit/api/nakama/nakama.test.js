@@ -1,4 +1,3 @@
-const { describe, expect, test } = require('jest');
 const nakama = require('../../../../api/nakama/nakama');
 const { Client } = require('@heroiclabs/nakama-js');
 
