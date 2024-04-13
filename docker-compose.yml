@@ -3,7 +3,7 @@ services:
   node:
     container_name: node
     image: very-haunted:node
-    entrypoint: npm start
+    entrypoint: npm run watch
     expose:
       - 3000
     ports:
