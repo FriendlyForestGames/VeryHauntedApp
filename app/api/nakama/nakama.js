@@ -11,7 +11,7 @@ class Nakama {
     instance = this;
 
     const useSSL = false; // Enable if server is run with an SSL certificate.
-    client = new Client('defaultkey', '127.0.0.1', '7350', useSSL);
+    client = new Client();
   }
 
   getInstance() {
