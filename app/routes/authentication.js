@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET home page. */
-router.POST('app/routes/authentication', function(req, res, next) {
-  res.render('authentication', { title: 'Express' });
+router.post('/', function(req, res, next) {
+  const body = req.body;
+  const email = body.email;
+  const password = body.password;
+  res.send({ email: email, password: password });
 });
 
 module.exports = router;
