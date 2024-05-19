@@ -1,4 +1,4 @@
-const { validateUuid } = require("../../../validation/util/uuid-validator");
+const { validateUuid } = require("../../../../validation/util/uuid-validator");
 
 describe("UUID Validator", () => {
   test("Valid UUID", () => {
