@@ -4,5 +4,6 @@ const readAccountByUuid = (req, res) => {
   const { uuid } = req.params;
 
   if (!validateUuid(uuid)) {
+    res.status(400);
   }
 };
