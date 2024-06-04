@@ -9,3 +9,7 @@ const readAccountByUuid = (req, res) => {
 
   return res.status(200).json({ message: "UUID is valid" });
 };
+
+module.exports = {
+  readAccountByUuid,
+};
