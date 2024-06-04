@@ -6,4 +6,6 @@ const readAccountByUuid = (req, res) => {
   if (!validateUuid(uuid)) {
     res.status(400).json({ message: "Invalid UUID string provided" });
   }
+
+  return res.status(200).json({ message: "UUID is valid" });
 };
