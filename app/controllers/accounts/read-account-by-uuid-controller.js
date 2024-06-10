@@ -1,3 +1,6 @@
+const express = require("express");
+const router = express.Router();
+
 const readAccountByUuid = router.get("/:accountUuid", (req, res) => {
   //using req to pull parameters from Uuid
   const accountUuid = req.params.accountUuid;
