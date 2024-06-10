@@ -1,2 +1,2 @@
 const Authentication = require("./authentication");
-const NakamaClient = require("../../api/nakama/nakama");
+const nakama = require("../../api/nakama/nakama");
