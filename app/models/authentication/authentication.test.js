@@ -1,6 +1,14 @@
 const Authentication = require("./authentication");
 const nakama = require("../../api/nakama/nakama");
 
+jest.mock("../../api/nakama/nakama", () => {
+  getInstance: jest
+    .fn()
+    .mockReturnValue((email, password) =>
+      Promise.resolve({ email, token: "fake-token" })
+    );
+});
+
 describe("Authentication", () => {
   let authentication;
 
