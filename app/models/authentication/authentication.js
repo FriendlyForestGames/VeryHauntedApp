@@ -9,3 +9,5 @@ class Authentication {
     return this.client.authenticateEmail(email, password);
   }
 }
+
+module.exports = Authentication;
