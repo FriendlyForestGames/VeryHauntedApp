@@ -2,7 +2,7 @@ const nakama = require("../../api/nakama/nakama");
 
 class Authentication {
   constructor() {
-    this.client = nakama;
+    this.client = nakama.getInstance;
   }
 
   authenticateEmail(email, password) {
